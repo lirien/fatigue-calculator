@@ -1,5 +1,6 @@
 const $ = require('jquery');
 const noUiSlider = require('no-ui-slider');
+const wNumb = require('wnumb');
 const FatigueCalculator = require('./fatigue-calculator');
 
 class FatigueController {
@@ -28,12 +29,11 @@ class FatigueController {
 
     noUiSlider.create(slider, {
       start: 0,
-      orientation: 'vertical',
       range: {
         'min': min,
         'max': max
       },
-      tooltips: true,
+      tooltips: wNumb({ decimals: 0 }),
       pips: {
         mode: 'steps',
         stepped: true,
