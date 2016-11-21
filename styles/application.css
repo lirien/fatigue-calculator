@@ -3,34 +3,50 @@
   src: url('../fonts/belwe.ttf') format("truetype");
 }
 
-html {
-  font-family: "Belwe BT Bold";
-}
-
 body {
+  font-family: "Belwe BT Bold";
   background-color: rgb(241, 214, 169);
 }
 
-div {
-  margin-left: 50px;
+.slider {
+  width: 80%;
+}
+
+.noUi-tooltip {
+  border: none;
+  border-radius: 0;
+  background: none;
+  margin-bottom: -3vh;
+  padding: 0;
+  font-size: 15vh;
+}
+
+.slider-section {
+  display: block;
+  margin-top: 10vh;
+}
+
+.damage {
+  display: inline-block;
+}
+
+.damage .output {
+  font-size: 40vw;
+  -webkit-text-stroke: 0.8vw black;
+}
+
+.damage .opponent {
+  color: #ff3322;
+}
+
+.damage .user {
+  color: #ccaa33;
 }
 
 .banner {
   font-size: 9vw;
-  margin-top: 45%;
   width: 100%;
   text-align: center;
-}
-
-@media (min-device-width: 480px) {
-  .banner {
-    margin-top: 2vw;
-    font-size: 5vw;
-    text-align: center;
-  }
-}
-
-@media (min-device-width:1280px) {
 }
 
 ::selection {

@@ -1,35 +1,39 @@
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles/application.css">
   <link rel="stylesheet" href="dist/styles/nouislider.min.css">
+  <link rel="stylesheet" href="styles/application.css">
   <script src="dist/fatigue.js"></script>
 </head>
 <body>
   <h1 class="banner">
     Coldlight Calculator
   </h1>
+  <div class="results">
+    <h2>Fatigue Damage</h2>
+    <div class="damage">
+      <h3>Self</h3>
+      <span class="user output">0</span>
+    </div>
+    <div class="damage">
+      <h3>Opponent</h3>
+      <span class="opponent output">0</span>
+    </div>
+  </div>
   <form>
-    <span class="user">
+    <span class="user slider-section">
       <label>Your Cards</label>
       <span class="count">0</span>
       <div class="slider"></div>
     </span>
-    <span class="opponent">
+    <span class="opponent slider-section">
       <label>Opponent's Cards</label>
       <span class="count">0</span>
       <div class="slider"></div>
     </span>
-    <span class="cards">
+    <span class="cards slider-section">
       <label>Cards Drawn</label>
       <span class="count">0</span>
       <div class="slider"></div>
     </span>
   </form>
-  <div class="results">
-    <h2>Fatigue Damage</h2>
-    <h3>Self</h3>
-    <span class="user">0</span>
-    <h3>Opponent</h3>
-    <span class="opponent">0</span>
-  </div>
 </body>
