@@ -20,8 +20,8 @@ class FatigueController {
 
   onUpdate() {
     this.readInputValues();
-    this.updateSliderCounts();
     this.updateDamage();
+    this.updateColors();
   }
 
   createSlider(selector, { min, max } = { min: -10, max: 10 }) {
@@ -51,10 +51,18 @@ class FatigueController {
     this.cardsDrawn = Number.parseInt(this.cardsSlider.noUiSlider.get());
   }
 
-  updateSliderCounts() {
-    $('.user .count').text(this.userCards);
-    $('.opponent .count').text(this.opponentCards);
-    $('.cards .count').text(this.cardsDrawn);
+  updateColors() {
+    if (this.userCards < 0) {
+      $('.user .slider .noUi-tooltip').css('color', 'red');
+    } else {
+      $('.user .slider .noUi-tooltip').css('color', 'white');
+    }
+
+    if (this.opponentCards < 0) {
+      $('.opponent .slider .noUi-tooltip').css('color', 'red');
+    } else {
+      $('.opponent .slider .noUi-tooltip').css('color', 'white');
+    }
   }
 
   updateDamage() {

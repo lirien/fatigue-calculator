@@ -9,7 +9,8 @@ body {
 }
 
 .slider {
-  width: 80%;
+  margin: auto;
+  width: 75%;
 }
 
 .noUi-tooltip {
@@ -18,12 +19,48 @@ body {
   background: none;
   margin-bottom: -3vh;
   padding: 0;
-  font-size: 15vh;
+  margin-top: -5vh;
+  font-size: 13vh;
+  -webkit-text-stroke: 0.8vw black;
+  color: #ffffff;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+  height: 2.5vh;
+  width: 0.2vh;
+  top: 1.3vw;
+  background-color: #888888;
+}
+
+.noUi-handle:before {
+  left: 2vw;
+}
+
+.noUi-handle::after {
+  left: 3vw;
 }
 
 .slider-section {
   display: block;
   margin-top: 10vh;
+}
+
+.slider-section .header {
+  text-align: center;
+  width: 100%;
+  font-size: 2vw;
+}
+
+.noUi-horizontal {
+  height: 3vh;
+  background-color: #CC6A2B;
+}
+
+.noUi-horizontal .noUi-handle {
+  height: 4vh;
+  width: 3vh;
+  left: -1.5vh;
+  background-color: #000000;
 }
 
 .damage {
