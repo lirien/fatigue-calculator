@@ -66,6 +66,10 @@ body {
   background-color: #000000;
 }
 
+.noUi-value-large {
+  display: none;
+}
+
 .results {
   text-align: center;
   height: 30vh;
@@ -113,4 +117,61 @@ body {
 
 ::selection {
   background: #CC6A2B;
+}
+
+@media (min-device-width: 480px) {
+  .banner {
+    font-size: 5vw;
+  }
+  .damage .output {
+    font-size: 20vw;
+    line-height: 15vw;
+  }
+  .fatigue {
+    font-size: 3vw;
+    line-height: 2vw;
+  }
+
+  .noUi-tooltip {
+    display: block;
+    height: 9vh;
+    line-height: 7vh;
+    border: none;
+    border-radius: 0;
+    background: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12vh;
+    -webkit-text-stroke: 0.2vw black;
+    color: #ffffff;
+  }
+
+  .noUi-handle:after, .noUi-handle:before {
+    display: none;
+  }
+
+  .slider {
+    margin: auto;
+    width: 75%;
+  }
+
+  .slider-section {
+    display: inline-block;
+    margin-top: 15vh;
+    width: 33%;
+  }
+
+  .header {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vw;
+    line-height: 3vw;
+  }
+
+  .label {
+    font-size: 3vw;
+    line-height: 11vh;
+    display: block;
+  }
 }
