@@ -14,12 +14,14 @@ body {
 }
 
 .noUi-tooltip {
+  display: block;
+  height: 9vh;
+  line-height: 7vh;
   border: none;
   border-radius: 0;
   background: none;
-  margin-bottom: -3vh;
+  margin: 0;
   padding: 0;
-  margin-top: -5vh;
   font-size: 13vh;
   -webkit-text-stroke: 0.8vw black;
   color: #ffffff;
@@ -42,13 +44,14 @@ body {
 
 .slider-section {
   display: block;
-  margin-top: 10vh;
+  margin-top: 12vh;
 }
 
-.slider-section .header {
+.header {
+  overflow: hidden;
   text-align: center;
   width: 100%;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .noUi-horizontal {
@@ -63,8 +66,30 @@ body {
   background-color: #000000;
 }
 
+.results {
+  text-align: center;
+  height: 30vh;
+}
+
 .damage {
-  display: inline-block;
+  float: right;
+  width: 50%;
+  line-height: 30vw;
+}
+
+.left {
+  width: 50%;
+  float: left;
+}
+
+.fatigue {
+  font-size: 5vw;
+}
+
+.label {
+  font-size: 5vw;
+  line-height: 11vh;
+  display: block;
 }
 
 .damage .output {

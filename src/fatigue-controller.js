@@ -73,8 +73,8 @@ class FatigueController {
       this.opponentCards, this.cardsDrawn + 1
     );
 
-    $('.results .user').text(userDamage);
-    $('.results .opponent').text(opponentDamage);
+    $('.results .user').text(userDamage < 100 ? userDamage : '∞');
+    $('.results .opponent').text(opponentDamage < 100 ? opponentDamage : '∞');
   }
 }
 
