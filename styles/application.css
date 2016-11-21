@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Belwe BT Bold";
+  src: url('../fonts/belwe.ttf') format("truetype");
+}
+
+html {
+  font-family: "Belwe BT Bold";
+}
+
+body {
+  background-color: rgb(241, 214, 169);
+}
+
+div {
+  margin-left: 50px;
+}
+
+.banner {
+  font-size: 9vw;
+  margin-top: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-device-width: 480px) {
+  .banner {
+    margin-top: 2vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+}
+
+@media (min-device-width:1280px) {
+}
+
+::selection {
+  background: #CC6A2B;
+}

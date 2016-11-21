@@ -1,4 +1,7 @@
 const $ = require('jquery');
-const FatigueCalculator = require('./fatigue-calculator');
+const FatigueController = require('./fatigue-controller');
 
-window.calculator = new FatigueCalculator();
+$(() => {
+  window.controller = new FatigueController();
+  window.controller.initialize();
+});

@@ -4,10 +4,15 @@ class FatigueCalculator {
   }
 
   fatigueDamage(cardsRemaining, cardsDrawn) {
-    if(cardsRemaining >= 0) {
-      return this.triangleNumber(cardsDrawn - cardsRemaining);
+    let overdraw = cardsDrawn - cardsRemaining;
+    if (overdraw <= 0) {
+      return 0;
     }
-    return this.triangleNumber(cardsDrawn - cardsRemaining) - this.triangleNumber(-cardsRemaining);
+
+    if(cardsRemaining >= 0) {
+      return this.triangleNumber(overdraw);
+    }
+    return this.triangleNumber(overdraw) - this.triangleNumber(-cardsRemaining);
   }
 }
 
